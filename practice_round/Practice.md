@@ -18,7 +18,7 @@ Order as many pizza slices as possible, but not more than the maximum number
 	- an integer N: 1 <= N <= 10e5
 		- the number of different types of pizza
 - Second line
-	- N integers: the number of slices in each type of pizza, in *non-decreasing order*
+	- N integers: the number of slices in each type of pizza, in **non-decreasing order**
 	- 1 <= S0 <= S1 <= ... <= Sn-1 <= M
 
 ## Example
@@ -30,3 +30,6 @@ Order as many pizza slices as possible, but not more than the maximum number
 - The first line should contain a single integer K (0 ≤ K ≤ N) – the number of different types of pizza to order.
 - The second line should contain K numbers – the types of pizza to order (the types of pizza are numbered from 0 to N-1 in the order they are listed in the input).
 - The total number of slices in the ordered pizzas must be less than or equal to M.
+
+## Colab Exploration
+https://colab.research.google.com/drive/1bVHi-ztCphGWmqVkh81MAvV-VIiWq9Rz
