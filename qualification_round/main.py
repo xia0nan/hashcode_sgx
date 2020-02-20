@@ -2,7 +2,7 @@ import glob
 
 import parsr, solver, scorer, writer
 
-for idx, filename in enumerate(glob.glob('datasets/*')):
+for idx, filename in enumerate(glob.glob('data/*')):
     dataset = parsr.parse(filename)
     solution = solver.solve(dataset)
     score = scorer.score(solution, dataset)
@@ -11,4 +11,4 @@ for idx, filename in enumerate(glob.glob('datasets/*')):
         'Score for %s: %s/%s (%s to total score)' % (filename, score, 
             total_score, total_score - score)
     )
-    writer.write(solution, filename.replace('datasets','solutions'))
+    writer.write(solution, filename.replace('data','solutions'))
