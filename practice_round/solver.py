@@ -3,7 +3,7 @@
 # 	return [0]
 
 # 02. Greedy Solution
-def solve(dataset):
+def greedy(dataset):
 	slices = 0
 	solution = []
 	for i in range(len(dataset['pizzas'])):
@@ -12,6 +12,8 @@ def solve(dataset):
 	return solution
 
 # 03. Solving the knapsack
+# !pip install progressbar2
+import progressbar
 def knapsolve(dataset):
     maxscore = dataset['knapsize']
     dp = [None for _ in range(maxscore+1)]
